@@ -1,4 +1,5 @@
 require 'param_filter/expression'
+require 'active_support'
 
 module ParamFilter
   def self.process(model, params)
@@ -23,8 +24,8 @@ module ParamFilter
    private
    
     def parse(params)
-      @expressions = params.collect do |key, value|
-        Expression.new(key, value)
+      @expressions = params.collect do |column_name, value|
+        Expression.new(column_name, value)
       end
     end
   end

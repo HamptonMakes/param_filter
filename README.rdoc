@@ -1,6 +1,9 @@
 = param_filter
 
-Description goes here.
+Is an easy way to do "filtering" with parameters. Some might
+call this searching, but I'm being pedantic. Its filtering.
+If you need real search, go somewhere else. But, this is good
+for when you have a complex filtering form.
 
 == Note on Patches/Pull Requests
  

@@ -5,7 +5,7 @@ class TestParamFilter < Test::Unit::TestCase
   def params
     {"documents"=>{"regular_rank"=>"5", "age>-"=>"4", "title~"=>"he", "is_valid"=>"true"}}
   end
-  
+
   def model_filter
     Document
   end
